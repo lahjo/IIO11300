@@ -36,7 +36,23 @@ namespace Tehtava1
             try
             {
                 double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
+
+                double height = double.Parse(txtHeight.Text);
+                double widht = double.Parse(txtWidht.Text);
+                double karmWidht = double.Parse(txtKarmWidht.Text);
+
+                BusinessLogicWindow bs = new BusinessLogicWindow();
+
+                result = bs.CalculatePerimeter(height, widht);
+                double windowsarea = result - ((height - 2*karmWidht) * (widht - 2*karmWidht));
+                b1.Text = windowsarea.ToString();
+
+                double karmarea = result - windowsarea;
+                a1.Text = karmarea.ToString();
+
+                double karmpiiri = widht + height + widht + height;
+                c1.Text = karmpiiri.ToString();
+
             }
             catch (Exception ex)
             {
@@ -45,13 +61,9 @@ namespace Tehtava1
             finally
             {
                 //yield to an user that everything okay
+                
             }
         }
-
-    private void btnClose_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
   }
 
   public class BusinessLogicWindow
@@ -59,9 +71,12 @@ namespace Tehtava1
     /// <summary>
     /// CalculatePerimeter calculates the perimeter of a window
     /// </summary>
-    public static double CalculatePerimeter(double widht, double height)
+    public double CalculatePerimeter(double widht, double height)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
+            double area = widht * height;
+
+            return area;
         }
     }
 }

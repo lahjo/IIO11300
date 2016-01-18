@@ -10,12 +10,24 @@
     <StackPanel Orientation="Horizontal">
       <StackPanel Orientation="Vertical">
         <TextBlock x:Name="tbWidht" Text="Ikkunan leveys" Height="28" Margin="10,10,10,0" />
-        <TextBox x:Name="txtWidht" Text="600" Height="28" Width="114" Margin="10,10,10,0" />
-      </StackPanel>
-      <StackPanel Orientation="Vertical">
+        <TextBox x:Name="txtWidht" Text="0" Height="28" Width="114" Margin="-40,10,10,0" />
+        <TextBlock x:Name="tbHeight" Text="Ikkunan korkeus" Height="28" Margin="10,10,10,0" />
+        <TextBox x:Name="txtHeight" Text="0" Height="28" Width="114" Margin="-40,10,10,0" />
+        <TextBlock x:Name="tbKarmWidht" Text="Karmipuun leveys" Height="28" Margin="10,10,10,0" />
+        <TextBox x:Name="txtKarmWidht" Text="45" Height="28" Width="114" Margin="-40,10,10,0" />
+
         <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>
-        <Button x:Name="btnClose" Content="Sulje" Height="32" Width="180" Click="btnClose_Click" Margin="10,10,10,0"/>
-      </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <TextBlock x:Name="b" Text="Ikkunan pinta-ala (mm^2)" Height="28" Width="210" Margin="10,10,10,0" />
+                <TextBlock x:Name="b1" Text="0" Height="28" Width="180" Margin="10,10,10,0" />
+
+                <TextBlock x:Name="c" Text="Karmin piiri (mm)" Height="28" Width="185" Margin="10,30,10,0" />
+                <TextBlock x:Name="c1" Text="0" Height="28" Width="180" Margin="10,10,10,0" />
+
+                <TextBlock x:Name="a" Text="Karmin pinta-ala (mm^2)" Height="28" Width="210" Margin="10,30,10,0" />
+                <TextBlock x:Name="a1" Text="0" Height="28" Width="180" Margin="10,10,10,0" />
+            </StackPanel>
     </StackPanel>
   </Grid>
 </Window>
