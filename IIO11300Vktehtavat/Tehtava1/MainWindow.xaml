@@ -17,6 +17,7 @@
         <TextBox x:Name="txtKarmWidht" Text="45" Height="28" Width="114" Margin="-40,10,10,0" />
 
         <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Width="180" Click="btnCalculate_Click" Margin="10,10,10,0"/>
+                <Button x:Name="btnCalculateAreaOO" Content="Lakse pinta-ala (Olio)" Height="32" Width="180" Click="btnCalculateAreaOO_Click" Margin="10,5,10,0"/>
             </StackPanel>
             <StackPanel Orientation="Vertical">
                 <TextBlock x:Name="b" Text="Ikkunan pinta-ala (mm^2)" Height="28" Width="210" Margin="10,10,10,0" />

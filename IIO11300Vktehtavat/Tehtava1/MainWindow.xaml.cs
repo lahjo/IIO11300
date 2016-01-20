@@ -64,9 +64,31 @@ namespace Tehtava1
                 
             }
         }
-  }
 
-  public class BusinessLogicWindow
+        private void btnCalculateAreaOO_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Lasketaan pinta-ala Ikkuna-olion avulla
+                // Luodaan luokasta olio
+                JAMK.IT.IIO11300.Ikkuna ikk = new JAMK.IT.IIO11300.Ikkuna();
+                ikk.Korkeus = double.Parse(txtHeight.Text);
+                ikk.Leveys = double.Parse(txtWidht.Text);
+
+                // Tulosta käyttäjälle
+                // VE metodilla
+                //MessageBox.Show(ikk.LaskePintaAla().ToString());
+
+                // VE property
+                MessageBox.Show(ikk.PintaAla.ToString());
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
+        }
+    }
+
+    public class BusinessLogicWindow
     {
     /// <summary>
     /// CalculatePerimeter calculates the perimeter of a window
