@@ -15,8 +15,11 @@
                         <TextBlock Text="Tänään on: " />
                         <TextBlock x:Name="txtToday" />
                         <TextBlock Text="Tiedoston nimi: " Margin="10,0,0,0" />
-                        <TextBox x:Name="txtFileName" Text="d:\temp\testi.txt" />
-                    </StackPanel>
+                        <TextBox x:Name="txtFileName" Text="d:\testi.txt" />
+                        <Button x:Name="btnSaveToFile" Content="Save" Margin="10,0,0,0" Click="btnSaveToFile_Click"/>
+                            <Button x:Name="btnGetFromFile" Content="Read" Margin="10,0,0,0" Click="btnGetFromFile_Click" />
+                            <Button x:Name="btnSaveToXML" Content="Save to xml" Margin="10,0,0,0" Click="btnSaveToXML_Click" />
+                        </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Klo: " />
                         <TextBox x:Name="txtClock" Width="60" />
