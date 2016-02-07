@@ -7,11 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "Tehtava1\Tehtav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus1MediaPlayer", "Harjoitus1MediaPlayer\Harjoitus1MediaPlayer.csproj", "{CFEFD09F-F791-4A7D-8AC9-033E056D37C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtävä2", "Tehtävä2\Tehtävä2.csproj", "{4A955BB3-A6B9-4361-A2BF-C70EFAF1B40A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava2", "Tehtävä2\Tehtava2.csproj", "{4A955BB3-A6B9-4361-A2BF-C70EFAF1B40A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus3-MittausData", "Harjoitus3-MittausData\Harjoitus3-MittausData.csproj", "{637DBBA5-1E51-4B79-92E8-589018AEB608}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava3", "Tehtava3\Tehtava3.csproj", "{16382592-FDAB-4AAD-88A9-6DBAC41874B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava4", "Tehtava4\Tehtava4.csproj", "{4CC25EB8-BB80-4D2B-989A-D9A385088406}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{16382592-FDAB-4AAD-88A9-6DBAC41874B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16382592-FDAB-4AAD-88A9-6DBAC41874B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16382592-FDAB-4AAD-88A9-6DBAC41874B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC25EB8-BB80-4D2B-989A-D9A385088406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC25EB8-BB80-4D2B-989A-D9A385088406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC25EB8-BB80-4D2B-989A-D9A385088406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC25EB8-BB80-4D2B-989A-D9A385088406}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
