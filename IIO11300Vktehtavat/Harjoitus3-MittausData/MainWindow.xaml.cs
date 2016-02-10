@@ -88,7 +88,7 @@ namespace Harjoitus3_MittausData
         private void btnSaveToXML_Click(object sender, RoutedEventArgs e)
         {
             // Serialisoidaan XML:ksi
-            JAMK.IT.IIO11300.Serialisointi.SerialisoiXml(@"d:\testi.xml", mitatut);
+            JAMK.IT.IIO11300.Serialisointi.SerialisoiXml(@"d:\\testi.xml", mitatut);
         }
     }
 }
