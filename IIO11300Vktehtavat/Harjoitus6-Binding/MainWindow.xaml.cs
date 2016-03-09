@@ -59,5 +59,11 @@ namespace Harjoitus6_Binding
         {
             myGrid.DataContext = joukkueet;
         }
+
+        private void btnpelaaja_Click(object sender, RoutedEventArgs e)
+        {
+            PlayerWindow win = new PlayerWindow();
+            win.ShowDialog();
+        }
     }
 }
