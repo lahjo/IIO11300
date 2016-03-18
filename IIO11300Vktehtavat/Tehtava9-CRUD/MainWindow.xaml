@@ -1,0 +1,36 @@
+﻿<Window x:Class="Tehtava9_CRUD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava9_CRUD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="570">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel>
+                <Button Content="Hae asiakkaat" Click="Button_Click"/>
+            </StackPanel>
+            <StackPanel>
+                <Button x:Name="btnNewCustomerShow" Content="Tee uusi" Click="btnNewCustomerShow_Click"></Button>
+                <StackPanel Orientation="Horizontal" x:Name="addCustomerstpanel">
+                    <TextBlock Text="Etunimi"/>
+                    <TextBox Width="50" x:Name="Enimi" Background="Beige"/>
+                    <TextBlock Text="Sukunimi" Margin="10,0,0,0"/>
+                    <TextBox Width="50" x:Name="Snimi" Background="Beige"/>
+                    <TextBlock Text="Osoite" Margin="10,0,0,0"/>
+                    <TextBox Width="50" x:Name="osoite" Background="Beige"/>
+                    <TextBlock Text="Postinro" Margin="10,0,0,0"/>
+                    <TextBox Width="50" x:Name="posnro" Background="Beige"/>
+                    <TextBlock Text="Kaupunki" Margin="10,0,0,0"/>
+                    <TextBox Width="50" x:Name="kaupunki" Background="Beige"/>
+                    <Button x:Name="btnNewCustomer" Content="Tallena" Click="btnNewCustomer_Click"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <Button x:Name="btnDeleteCustomer" Content="Poista valittu" Click="btnDeleteCustomer_Click"/>
+            </StackPanel>
+            <DataGrid x:Name="GridCustomers" ItemsSource="{Binding}" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible"  Height="200"/>
+        </StackPanel>
+    </Grid>
+</Window>
