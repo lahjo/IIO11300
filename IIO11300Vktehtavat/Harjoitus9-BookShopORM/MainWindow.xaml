@@ -1,0 +1,38 @@
+﻿<Window x:Class="Harjoitus9_BookShopORM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Harjoitus9_BookShopORM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="468.155">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="117" Margin="10,10,0,0" VerticalAlignment="Top" Width="142">
+            <Button x:Name="btnHae" Content="Hae tekstikirjat" Click="btnHae_Click" />
+            <Button x:Name="btnHaeSql" Content="Hae kirjat SQL Server" Click="btnHaeSql_Click"/>
+            <ComboBox x:Name="comboBox"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Name="spBook" Height="117" Margin="157,10,0,0" VerticalAlignment="Top" Width="277">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Tuote"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="textBlock8" TextWrapping="Wrap" Text="Nimi" Width="45"/>
+                <TextBox x:Name="Nimi"  Width="100" Margin="10,0,0,0" Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="txbkirjailija" TextWrapping="Wrap" Text="Kirjailija" Width="45"/>
+                <TextBox x:Name="Kirjailija"  Width="100" Margin="10,0,0,0" Text="{Binding Path=Author, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="txbmaa" TextWrapping="Wrap" Text="Maa" Width="45"/>
+                <TextBox x:Name="maa"  Width="100" Margin="10,0,0,0" Text="{Binding Path=Country, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="txbVuosi" TextWrapping="Wrap" Text="Vuosi" Width="45"/>
+                <TextBox x:Name="maa1"  Width="100" Margin="10,0,0,0" Text="{Binding Path=Year, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <Button x:Name="btnTallenna" Content="Tallenna" Click="btnTallenna_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="dgBooks" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="120" Width="424" SelectionChanged="dgBooks_SelectionChanged" AutoGenerateColumns="True" ItemsSource="{Binding}"/>
+
+    </Grid>
+</Window>
